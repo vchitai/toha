@@ -29,7 +29,7 @@
 <section class="content-section" id="content-section">
   <div class="content container-fluid" id="content">
     <div class="container-fluid post-card-holder" id="post-card-holder">
-      {{ $paginator := .Paginate .RegularPagesRecursive 12 }}
+      {{ $paginator := .Paginate .RegularPages 12 }}
       {{ range $paginator.Pages }}
         {{ partial "cards/post.html" . }}
       {{ end }}
